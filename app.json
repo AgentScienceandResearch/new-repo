@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "OptiFlux",
+    "slug": "optiflux",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "optiflux",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "extra": {
+      "teslaClientId": "82e41bfb-ea47-48e4-ab70-2ad898e5a1b3"
+    }
+  }
+}
