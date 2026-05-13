@@ -4,8 +4,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as AuthSession from 'expo-auth-session';
 import * as SecureStore from 'expo-secure-store';
 import { View, Text, Button, ActivityIndicator, StyleSheet } from 'react-native';
-import DashboardScreen from './src/screens/DashboardScreen';
-import SchedulerScreen from './src/screens/SchedulerScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -56,8 +54,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#000' }, headerTintColor: '#00f0ff' }}>
-        <Stack.Screen name="Dashboard" component={DashboardScreen} />
-        <Stack.Screen name="Scheduler" component={SchedulerScreen} />
+        <Stack.Screen name="Dashboard" component={() => <Text style={{ flex: 1, backgroundColor: '#000', color: '#fff', textAlign: 'center', marginTop: 100 }}>Dashboard coming next...</Text>} />
+        <Stack.Screen name="Scheduler" component={() => <Text style={{ flex: 1, backgroundColor: '#000', color: '#fff', textAlign: 'center', marginTop: 100 }}>Scheduler coming next...</Text>} />
       </Stack.Navigator>
     </NavigationContainer>
   );
