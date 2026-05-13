@@ -1,0 +1,1 @@
+console.log('Tesla App initialized! 🚀\nConnect to your Tesla and chat with Grok.');
